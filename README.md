@@ -1,6 +1,8 @@
 Demo: https://weather-assignment-crpzjfqtf-ashokkotakommula.vercel.app/
 
 
+-use any name or password for login, password length greter than 6 charecters. 
+
 
 # Getting Started with Create React App
 
