@@ -1,0 +1,43 @@
+.about-us {
+    height: 15vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        width: 200px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+.open {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 300px;
+    right: 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #789;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    z-index: 1000;
+   
+    h2 {
+        text-align: center;
+        padding: 10px;
+    }
+    p {
+        line-height: 30px;
+        color: white;
+    }
+}
+.close {
+    display: none;
+}
+
+@media screen and (max-width: 520px) {
+    .about-us {
+        font-size: 12px;
+    }
+}

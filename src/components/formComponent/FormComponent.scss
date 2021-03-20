@@ -1,0 +1,20 @@
+.option-container {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        h2 {
+            text-align: center;
+            margin: 10px;
+        }
+        select {
+            width: 250px;
+            height: 40px;
+            border-radius: 5px;
+            outline-color: #789;
+        }
+    }
+    
+}

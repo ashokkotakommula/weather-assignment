@@ -1,0 +1,12 @@
+.home-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+}
+
+@import '../../components/formComponent/FormComponent.scss';
+@import '../../components/aboutUs/AboutUs.scss';
+@import '../../components/logoutButton/LogoutButton.scss';
+@import '../../components/weatherContainer/MainContainer/WeatherContainer.scss'
