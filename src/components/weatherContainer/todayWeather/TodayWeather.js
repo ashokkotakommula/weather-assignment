@@ -8,10 +8,11 @@ import { MdVisibility } from 'react-icons/md'
 import { WiStrongWind } from 'react-icons/wi'
 
 export default function TodayWeather({data}) {
+
     return (
         <div className="today-weather">
                 { data && data ? data.map(info => (
-                        <div key={info.id}>
+                        <div key={info.id} >
                             <div className="location-info">
                                 <div className="time-string">
                                     <p>{new Date().toLocaleTimeString()}</p>&nbsp;<p>{new Date().toDateString()}</p>

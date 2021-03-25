@@ -10,15 +10,24 @@ const authReducer = (state = false, action) => {
             return state
     }
 }
-const init = []
-const customAsyncData = (state=init, action) => {
+
+const customAsyncData = (state={}, action) => {
     switch(action.type) {
         case "SET_DATA": 
-            return [...init, action.payload]
+            return [action.payload]
             
         default:
             return state
     }
 }
 
-export {authReducer, customAsyncData}
+const customAsyncDataTwo = (state={}, action) => {
+    switch(action.type) {
+        case "SET_FIVEDAY":
+            return [action.payload]
+        default: 
+            return state
+    }
+}
+
+export {authReducer, customAsyncData, customAsyncDataTwo}

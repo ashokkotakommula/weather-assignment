@@ -10,10 +10,10 @@ const logout = () => {
     }
 }
 
-const getAsyncData = (city, lat, lon) => {
+const getAsyncData = (city) => {
     return {
         type: "GET_ASYNC_DATA",
-        payload: city, lat, lon
+        payload: city
     }
 }
 

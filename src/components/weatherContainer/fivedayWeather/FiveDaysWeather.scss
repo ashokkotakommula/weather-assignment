@@ -4,13 +4,70 @@
     width: 500px;
     height: 410px;
     border-radius: 10px;
+    padding: 10px; 
+   .weather-item {
+       height: 60px;
+       border: 1px solid #ddd;
+       margin: 5px;
+       border-radius: 5px;
+        padding: 5px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       .date-time {
+           p {
+               font-size: 10px;
+           }
+       }
+       .weather-info {
+           display: flex;
+           align-items: center;
+           
+            .weather-icon {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .weather-temp {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 200px;
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                    
+                }
+                
+            }
+
+       }
+       .weather-description {
+           width: 80px;
+          .weather-main {
+              p {
+                  font-size: 10px;
+              }
+          }
+
+       }
+       
+       
+   }
+   .note {   
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    .coming-soon {
-        width: 350px;
-        height: 350px;
+    p{
+        text-align: center;
+        margin: 20px;
     }
+    .select-img {
+        width: 300px;
+        height: 300px;
+    }
+}
 }
 
 @media screen and (max-width: 1002px) {
@@ -23,12 +80,29 @@
     .fiveday-weather {
         width: 400px;
         height: 400px;
+        
     }
 }
 
 @media screen and (max-width: 420px) {
     .fiveday-weather {
         width: 300px;
-        height: auto;
+        .date-time {
+            margin-right: 10px;
+            
+        }
+        .weather-item {
+          height: auto;
+            .weather-info {
+                .weather-icon {
+                    .weather-temp {
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+               
+            }
+        }
     }
 }

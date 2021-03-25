@@ -13,13 +13,16 @@ export default function Home() {
     const [isOpen, setIsOpen] = useState(false)
     const dispatch = useDispatch()
     const data = useSelector(state => state.customAsyncData);
+    const dataTwo = useSelector(state => state.customAsyncDataTwo);
 
     useEffect(() => {
         const val = localStorage.getItem('isLogIn')
         if(val === "false") {
             window.location.replace("/")
         }
-    }, [])
+    }, [data, dataTwo])
+
+
 
     const onLogout = () => {
         dispatch(AllActions.logout())
@@ -28,6 +31,7 @@ export default function Home() {
     
     const onChangeCity = (e) => {
         dispatch(AllActions.getAsyncData(e.target.value))
+       
     }
 
     const changeAboutus = () => {
@@ -41,7 +45,7 @@ export default function Home() {
     return (
         <div className="home-container">
             <FormComponent onChangeCity={onChangeCity} />
-            <WeatherContainer data={data}/>
+            <WeatherContainer data={data} dataTwo={dataTwo} />
             <AboutUs changeAboutus={changeAboutus} isOpen={isOpen}/>
             <LogoutButton onLogout={onLogout}/>
         </div>
