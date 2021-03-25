@@ -1,4 +1,4 @@
-Demo: https://weather-assignment-qqsorx4j8-ashokkotakommula.vercel.app/
+
 
 
 -use any name or password for login, password length greter than 6 charecters. 
